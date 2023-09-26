@@ -34,9 +34,6 @@ public class UserEntity extends BaseEntity{
     @Column(name = "departmentid")
     private Long departmentId;
 
-    @Column(name = "positionid")
-    private Long positionId;
-
     @Column(name = "beginworkdate")
     private Date beginWorkDate;
 
@@ -120,14 +117,6 @@ public class UserEntity extends BaseEntity{
 
     public void setDepartmentId(Long departmentId) {
         this.departmentId = departmentId;
-    }
-
-    public Long getPositionId() {
-        return positionId;
-    }
-
-    public void setPositionId(Long positionId) {
-        this.positionId = positionId;
     }
 
     public Date getBeginWorkDate() {

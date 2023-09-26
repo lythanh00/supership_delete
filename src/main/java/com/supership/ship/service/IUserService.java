@@ -10,6 +10,5 @@ import java.util.List;
 public interface IUserService {
     UserDTO saveUser(UserDTO userDTO);
     RoleDTO saveRole(RoleDTO roleDTO);
-
-
+    void addToUser(String username, String rolename);
 }

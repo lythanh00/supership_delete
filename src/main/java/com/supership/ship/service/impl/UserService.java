@@ -66,4 +66,11 @@ public class UserService implements IUserService {
 
         return roleConverter.toDTO(roleEntity);
     }
+
+    @Override
+    public void addToUser(String username, String rolename) {
+        UserEntity userEntity = userRepository.findByEmail(username);
+        RoleEntity roleEntity = roleRepository.findByName(rolename);
+        userEntity.getRoles().add(roleEntity);
+    }
 }
